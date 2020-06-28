@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
   <style>
+     @media only screen and (min-height: 600px) {
+            footer{
+                position: fixed;
+                left: 0;
+                bottom: 0;
+            }
+        }
       body{
           background-image: linear-gradient(
       rgba(255, 255, 255, 0.5), 
@@ -68,7 +75,7 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <audio controls>
-            <source src="music/5Symphony.mp3" type="audio/mpeg" autoplay>
+            <source src="music/Happy_AShamaluevMusic.mp3" type="audio/mpeg" autoplay>
           Your browser does not support the audio element.
           </audio>
           <br><br>
@@ -86,12 +93,12 @@
         <br>Whatever you do, you always remember your first day.
       </p>
       <!--change image to a book svg-->
-      <img src="img/lamp.png" alt="picture of lamppost" height="20%">
+      <img src="img/breeze.jpg" alt="picture of breeze" height="5%">
       <br>
       <button id="but1" onclick="next()">Next</button>
       <p id="poem2">
           <!--change image here too from moon to something else-->
-          <img src="img/moon.jpg" alt="image of moon" width="30%">
+          <img src="img/bored.jpg" alt="image of bored cartoon" width="30%">
           <br>
           <br>What about the second day, the third day or so forth?
           <br>When you still have those stomach cramps but the thrill is reduced.
@@ -102,15 +109,15 @@
         <button id=but2 onclick="next2()">Next</button>
       </p>
       <p id="poem3">
-          Do you know what is more important than anything else?
+          <br>Do you know what is more important than anything else?
           <br> Celebration...
           <br>When a student gets rid of his/her examination, it is time for a celebration.
           <br>You passed another day, does that not demand a celebration?
           <br>Now, now...life is not an exam. I repeat, it is not an exam.
           <br> It is a blank canvas that was left to you to write upon.
           <br>The availability of paint is though subject to those things in your life, you couldn't control.
-          <br>
-          <img src="img/leaf.jpg" alt="image of leaf" width="30%">
+          <br><br>
+          <img src="img/painter.png" alt="image of painter" width="30%">
           <br>
           <button id="but3" onclick="next3()">Next</button>
       </p>
@@ -130,6 +137,13 @@
           <br>
           What you did was your best back then...
           </strong>
+          <br>
+          <br>
+          <a href="walk2.html">
+          <i class="fas fa-chevron-circle-right fa-2x" title="click to go to day-2" alt="image to proceed" aria-label="proceed/next"></i>
+          </a>
+          <br>
+          Click to go to Day-3
       </p>
       </div>
     </div>
