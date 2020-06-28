@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+        @media only screen and (min-height: 600px) {
+            footer{
+                position: fixed;
+                left: 0;
+                bottom: 0;
+            }
+        }
+       body{
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5),  rgba(255, 255, 255, 0.5)),url("img/back5.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      header{
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+      }
+      #second{
+          display: none;
+      }
+      #last{
+          display: none;
+      }
+      button{
+          background: transparent;
+          border: none;
+      }
+      footer {
+          width: 100%;
+          background-color: rgb(17, 3, 3);
+          color: white;
+          text-align: center;
+          padding: 1rem;
+    }
+
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>The Walk-2</title>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Go to main page</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Day-3
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://nitinr2510.github.io/">About creator</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+          <header>
+        <h1 class="mt-5">A WALK </h1>
+        <p class="lead">part the second</p>
+        </header>
+        <br><br>
+        <p id="first">
+            I finally reached where I wanted always wanted to. And that gives me relief. 
+            <br>The question is where did I exactly want to come to? Was it in the vicinity of this city.
+            <br>(You do remember the road in the first entry, don't you?)
+            <br>In this city, I've heard a million people live. They live with their dreams
+            <br>They live with their work and their little life centered around themselves and their families.
+            <br>And now it is to me to find a more beautiful destiny than theirs.
+            <br><br><button id="sec" onclick="next()">Continue</button>
+        </p>
+        <p id="second">
+            <br>The Metropolis is just the way it was. I have riches to my aid now, I live and dine amongst the elites of the city.
+            <br>The world only smaller and humble to me. But... <br>
+            <br>Ironically enough, now that I have spent a few years in the city, I yearn to go back to the forest.
+            <br>To not continue living the way I have but to try again, and get the feeling again,
+            <br><strong><em>The feeling of excitment of trying and of being uncertain</em></strong>
+            <br>But that I believe shall be too strenous to carry forth.
+            <br><br>
+            <button id="lst" onclick="next2()">Continue the story</button>
+        </p>
+        <p id="last">
+            Well, well. I am glad you showed again. I just wanted to let you know, I did try again. This time to bring about a change in the city.
+            <br>I no longer am a part of the city that got assimilated in it. 
+            <br>The city has assimilated me and I have assimilated it. 
+            <br>We are mutual beneficiaries. And I understood something...
+            <br><strong><em>
+                The world looks great only when I changed something in it's working. Not just lived to the expectations I was bound to.
+                <br>Not being able to change the world does not make me sad, and it did not in at least those hundred attempts that failed.
+                <br>But I could just not rest without changing it. That was the problem. And hence, I kept trying. 
+                <br>I changed the world in my own way - I changed my world, in my own way.
+            </em></strong>
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer>
+      Well, well. The world is not just something we are a part of.
+      <br>It is also a part of ours. And so, our choices greatly bring upveal to its functioning.
+  </footer>
+  <script>
+      var x = document.getElementById("first");
+      var y = document.getElementById("second");
+      var z = document.getElementById("last");
+      var a = document.getElementById("sec");
+      var b = document.getElementById("lst");
+      function next(){
+          x.style.display = "none";
+          y.style.display = "block"
+      }
+      function next2(){
+          y.style.display = "none";
+          z.style.display = "block";
+      }
+  </script>
+  <!-- Bootstrap -->
+  <script src="jquery/jquery.slim.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
