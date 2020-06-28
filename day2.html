@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      body{
+          background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5), 
+      rgba(255, 255, 255, 0.5)),url("img/back.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      #poem2{
+          display: none;
+      }
+      #poem3{
+          display: none;
+      }
+      #last{
+          display: none;
+      }
+      button{
+          background: transparent;
+          border: none;
+      }
+      footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(17, 3, 3);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Second Day</title>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Go to Main Page</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Day-2
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://nitinr2510.github.io/">About creator</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <audio controls>
+            <source src="music/5Symphony.mp3" type="audio/mpeg" autoplay>
+          Your browser does not support the audio element.
+          </audio>
+          <br><br>
+        <h1 class="mt-5">THE SECOND DAY</h1>
+        <h4>Celebrate the under-rated</h4>
+        <br>
+      <p id="poem">
+        Can you feel the breeze of the second page? <!--Ha ha here-->
+        <br>
+        We all love the first day, don't we? - It feels so fresh<br>
+        It feels enthralling, one can even feel goosebumps and shivers every now and then.
+        It is all so very beautiful and you curse yourself for being a sissy for sitting silent in a corner
+        <br>Or maybe you just make it your best day - get a bunch of new friends in school or college
+        <br>Or maybe just feel good by the smell of the page when reading a book.
+        <br>Whatever you do, you always remember your first day.
+      </p>
+      <!--change image to a book svg-->
+      <img src="img/lamp.png" alt="picture of lamppost" height="20%">
+      <br>
+      <button id="but1" onclick="next()">Next</button>
+      <p id="poem2">
+          <!--change image here too from moon to something else-->
+          <img src="img/moon.jpg" alt="image of moon" width="30%">
+          <br>
+          <br>What about the second day, the third day or so forth?
+          <br>When you still have those stomach cramps but the thrill is reduced.
+          <br>You still have a feel in you, but you no longer feel bothered by it.
+          <br>How do you celebrate you second day? Or the third day?
+          <br>Or the days that carry the description I just laid forth?
+          <br><br>
+        <button id=but2 onclick="next2()">Next</button>
+      </p>
+      <p id="poem3">
+          Do you know what is more important than anything else?
+          <br> Celebration...
+          <br>When a student gets rid of his/her examination, it is time for a celebration.
+          <br>You passed another day, does that not demand a celebration?
+          <br>Now, now...life is not an exam. I repeat, it is not an exam.
+          <br> It is a blank canvas that was left to you to write upon.
+          <br>The availability of paint is though subject to those things in your life, you couldn't control.
+          <br>
+          <img src="img/leaf.jpg" alt="image of leaf" width="30%">
+          <br>
+          <button id="but3" onclick="next3()">Next</button>
+      </p>
+      <p id="last">
+          How about a small celebration now itself?
+          <br> You just completed this second page of this boring web-blog.
+          <br>Play your favourite music and lay back to rest.
+          <br>Trust me, you deserve one for being a good reader, one I could never become. XD
+          <br>And remember, this last verse from day 1 - 
+          <br>
+          <strong>
+          You did it!
+          <br>
+          You did well
+          <br>
+          Fear not any longer
+          <br>
+          What you did was your best back then...
+          </strong>
+      </p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    Not everyone celebrates the second day<br>
+    Do you??!
+  </footer>
+  <script>
+      var w = document.getElementById("poem");
+      var x = document.getElementById("poem2");
+      var a = document.getElementById("but1");
+      var y = document.getElementById("poem3");
+      var b = document.getElementById("but2");
+      var z = document.getElementById("last");
+      var c = document.getElementById("but3");
+     function next() {
+    w.style.display = "none";
+    x.style.display = "block";
+    but1.innerHTML="..."
+  } 
+
+function next2() {
+    x.style.display = "none";
+    y.style.display = "block";
+    but2.innerHTML="..."
+  }
+
+function next3() {
+    y.style.display = "none";
+    z.style.display = "block";
+    but3.innerHTML="..."
+  }
+  </script>
+  <!-- Bootstrap -->
+  <script src="https://kit.fontawesome.com/938b5b2a3b.js" crossorigin="anonymous"></script>
+  <script src="jquery/jquery.slim.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
