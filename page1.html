@@ -6,6 +6,17 @@
   <title>Introduction</title>
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    #credit-mobile{
+      display: none;
+    }
+    @media only screen and (max-width: 600px) {
+    #book{
+        display: none;
+    }
+    #credit-mobile{
+      display: block;
+    }
+}
       @import url('https://fonts.googleapis.com/css?family=Stalemate');
 *, *:before, *:after {
   box-sizing: border-box;
@@ -97,7 +108,7 @@ body {
   </nav>
   <!-- Page Content -->
     <div class="container">
-        <div class="book-wrapper">
+        <div class="book-wrapper" id="book">
           <div class="book-cover">
             <img src="https://github.com/slyka85/assets/blob/master/bookcover2.png?raw=true" alt="">
           </div>
@@ -175,6 +186,15 @@ body {
           </div>
         </div>
       </div>  
+      <div id="credit-mobile" style="color: #fff; text-align: center;">
+        Concept by: Nitin Ranjan
+        <br>
+        I am grateful that you are here.
+        <br>
+        <hr>
+        This page is for mobile-viewing purpose. If you shift to a larger screen, the view that is offered has been 
+        primarily borrowed from the link shared in navbar.
+      </div>
   </div>
   <!-- Bootstrap -->
   <script src="jquery/jquery.slim.min.js"></script>
